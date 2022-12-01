@@ -27,14 +27,14 @@ for i in range(3, totalProduct+1):
 
 # print(titleList)
 
-data = {'product_name': titleList,
+data = {'productName': titleList,
         'Quantity': qList,
-        'price': priceList,
+        'Price': priceList,
         }
 
 
 df = pd.DataFrame(data)
 
-df.to_excel(r'G:\EuropeanITSoulution\Class 15\scrapeData.xlsx', index=False)
+df.to_excel(r'G:\EuropeanITSoulution\Class 15\dataDicToExcel\scrapeData.xlsx', index=False)
 
 driver.quit() 
