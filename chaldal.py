@@ -35,6 +35,6 @@ data = {'product_name': titleList,
 
 df = pd.DataFrame(data)
 
-df.to_excel(r'G:\EuropeanITSoulution\Class 15\scrapeData.xlsx', index=False)
+df.to_csv('allData.csv') 
 
 driver.quit() 
